@@ -37,18 +37,4 @@ public class StreamRefactoring {
         System.out.println(sum);
     }
 
-    public void unrollFor() {
-        Student a = StudentCreator.create("A", 2000, 5);
-        Student b = StudentCreator.create("B", 2000, 4);
-
-        List<Student> students = Arrays.asList(a, b);
-
-        double sum = 0;
-        for (Student student : students) {
-            sum += student.getAverageNote();
-        }
-
-        System.out.println(sum);
-    }
-
 }
